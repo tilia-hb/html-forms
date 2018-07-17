@@ -16,11 +16,23 @@
 			}
 			#melon_price_header {
 
-				color:yellow;
+				color:#009999;
 			}	
 			.classy_class {
 
 				color:#380090;
+			}
+			.melon_image{
+
+				margin-left:4em;
+			}
+			.prices{
+
+
+			}
+			form{
+
+				line-height:2em;
 			}
 
 
@@ -30,20 +42,23 @@
 	<body>
 		<h1>Order!</h1>
 		<h3>&nbsp;&nbsp;&nbsp;&nbsp;Prices</h3>
-		<a target="_blank" href="https://www.marthastewart.com/1075123/our-top-13-summer-melons">
+		<div class="melon_image"><a target="_blank" href="https://www.marthastewart.com/1075123/our-top-13-summer-melons">
 			<img alt="pretty melons" height=300 src="https://media1.fdncms.com/pique/imager/u/zoom/3831457/food_glenda1-1-f837d4e55267a11e.jpg">
 		</a>
-		<table>
-			<tr id="melon_price_header"><th>Melon Name</th>
-			<th>Price per lb</th></tr>
-			
-			<tr><td>Watermelon</td><td>$1.59</td></tr>
-			<tr><td>Honeydew</td><td>$0.99</td></tr>
-			<tr class="classy_class"><td>Canteloupe</td><td>$1.29</td></tr>
-			<tr><td>Crenshaw</td><td>$2.19</td></tr>
-			<tr><td>Canary</td><td>$11.99</td></tr>
+	</div>
+		<div class="prices">
+			<table>
+				<tr id="melon_price_header"><th>Melon Name</th>
+				<th>Price per lb</th></tr>
+				
+				<tr><td>Watermelon</td><td>$1.59</td></tr>
+				<tr><td>Honeydew</td><td>$0.99</td></tr>
+				<tr class="classy_class"><td>Canteloupe</td><td>$1.29</td></tr>
+				<tr><td>Crenshaw</td><td>$2.19</td></tr>
+				<tr><td>Canary</td><td>$11.99</td></tr>
 
-		</table>
+			</table>
+		</div>
 		<p class="classy_class">Place your orders here! You know you want to.</p>
 
 		<form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
